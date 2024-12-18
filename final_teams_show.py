@@ -5,7 +5,7 @@ import pandas as pd
 @st.cache_data
 def load_data():
     auction_df = pd.read_csv('mock_auction_players.csv')
-    players_bids_df = pd.read_csv('players_bids.csv')
+    players_bids_df = pd.read_csv('final_team.csv')
     return auction_df, players_bids_df
 
 # Public page
@@ -18,7 +18,7 @@ def public_page():
 
     # Add a refresh button to reload the data from the CSV
     if st.button("Refresh Data"):
-        st.session_state.players_bids_df = pd.read_csv('players_bids.csv')
+        st.session_state.players_bids_df = pd.read_csv('final_team.csv')
 
     # Get the list of unique teams from the bid data
     teams = st.session_state.players_bids_df['Franchise'].unique()
@@ -34,19 +34,12 @@ def public_page():
 
     # Display team name and player bids with updated serial number
     st.subheader(f"Team: {selected_team}")
-    st.dataframe(team_players[['No.', 'Player Name', 'Role', 'Bid Amount', 'Points']])
+    st.dataframe(team_players[['No.', 'Player Name', 'Role','Points']])
 
-    # Calculate the sum of the bid amounts for the current team
-    total_bid_amount = team_players['Bid Amount'].sum()
-
-    # Calculate the remaining budget
-    remaining_budget = total_budget - total_bid_amount
 
     # Calculate the average overall rating (Ovr), assuming "Points" is the overall rating
     average_ovr = team_players['Points'].mean() if not team_players['Points'].isnull().all() else 0
 
-    # Display the remaining budget and average Ovr
-    st.write(f"Remaining Budget: ₹{(remaining_budget/100):.2f} Crores")
     st.write(f"Average Ovr: {average_ovr:.2f}")
 
 # Main function to handle the page

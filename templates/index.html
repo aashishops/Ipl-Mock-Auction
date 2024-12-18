@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IPL Admin Portal</title>
+    <!-- <link rel="stylesheet" type="text/css" href="/static/style.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static', path='/style.css') }}">
+
+
+</head>
+<body>
+    <div class="container">
+        <h1>IPL Admin Portal</h1>
+        {% if not team_name %}
+            <h2>Admin Login</h2>
+            <form action="/login" method="post">
+                <label for="team_name">Select IPL Team:</label>
+                <select name="team_name" id="team_name">
+                    {% for team in teams %}
+                        <option value="{{ team }}">{{ team }}</option>
+                    {% endfor %}
+                </select>
+                <br>
+                <label for="password">Enter Password:</label>
+                <input type="password" id="password" name="password">
+                <br>
+                <button type="submit">Login</button>
+            </form>
+            {% if error %}
+                <p class="error">{{ error }}</p>
+            {% endif %}
+        {% else %}
+            <h2>Select Your Starting 11</h2>
+            <form action="/submit_team" method="post">
+                <input type="hidden" name="team_name" value="{{ team_name }}">
+                {% for i in range(11) %}
+                    <label for="player_{{ i }}">Select Player {{ i + 1 }}:</label>
+                    <select name="selected_players" id="player_{{ i }}">
+                        {% for player in team_players %}
+                            <option value="{{ player }}">{{ player }}</option>
+                        {% endfor %}
+                    </select>
+                    <br>
+                {% endfor %}
+                <button type="submit">Submit Team</button>
+            </form>
+        {% endif %}
+
+        {% if selected_team_df %}
+            <h2>Team Submission Result</h2>
+            <h3>Selected Team</h3>
+            {{ selected_team_df | safe }}
+            <h3>Average Points of Selected Team: {{ average_points }}</h3>
+        {% endif %}
+    </div>
+</body>
+</html>
