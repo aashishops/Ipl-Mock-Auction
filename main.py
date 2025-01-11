@@ -17,7 +17,7 @@ team_credentials = {
     "Delhi Capitals": "dc@2024",
     "Kolkata Knight Riders": "kkr@2024",
     "Royal Challengers Bangalore": "rcb@2024",
-    "Royal Rajasthan": "rr@2024",
+    "Rajasthan Royals": "rr@2024",
     "Sunrisers Hyderabad": "srh@2024",
     "Punjab Kings": "pbks@2024",
     "Lucknow Super Giants": "lsg@2024",
@@ -26,6 +26,8 @@ team_credentials = {
 
 # Load the player bid data
 players_df = pd.read_csv('players_bids.csv')
+print("lol")
+print(players_df)
 
 @app.get("/", response_class=HTMLResponse)
 async def login_form(request: Request):
@@ -38,7 +40,7 @@ async def login(request: Request, team_name: str = Form(...), password: str = Fo
         return templates.TemplateResponse("index.html", {"request": request, "team_name": team_name, "team_players": team_players})
     else:
         return templates.TemplateResponse("index.html", {"request": request, "teams": team_credentials.keys(), "error": "Invalid username or password. Please try again."})
-
+print(players_df)
 @app.post("/submit_team", response_class=HTMLResponse)
 async def submit_team(request: Request, team_name: str = Form(...), selected_players: list[str] = Form(...)):
     team_players = players_df[players_df['Franchise'] == team_name]
@@ -66,4 +68,4 @@ async def submit_team(request: Request, team_name: str = Form(...), selected_pla
 
 if __name__ == '__main__':
     import uvicorn
-    uvicorn.run(app, host='0.0.0.0', port=8000)
+    uvicorn.run(app, host='0.0.0.0', port=4209)

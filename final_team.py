@@ -18,7 +18,8 @@ team_credentials = {
 
 # Load the player bid data
 players_df = pd.read_csv('players_bids.csv')
-
+print("lol")
+print(players_df)
 # Streamlit UI
 st.title("IPL Admin Portal")
 

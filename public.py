@@ -47,7 +47,25 @@ def public_page():
 
     # Display the remaining budget and average Ovr
     st.write(f"Remaining Budget: ₹{(remaining_budget/100):.2f} Crores")
-    st.write(f"Average Ovr: {average_ovr:.2f}")
+   # st.write(f"Average Ovr: {average_ovr:.2f}")
+
+        # Add a clickable link at the bottom left
+    st.markdown(
+        """
+        <div style="position: fixed; bottom: 10px; left: 10px;">
+            <a href="http://192.168.0.101:4209/" target="_blank" style="text-decoration: none; color: #007BFF;">
+                Go to Team Submisson Page
+            </a>
+        </div>
+        """, 
+        unsafe_allow_html=True
+    )
+    st.download_button(
+        label= "Download Players List",
+        data =open(r"E:\folder\mock aution\code\mock_auction_players.csv").read(),
+        file_name = "mock_auction_player.csv",
+        mime = "text/csv",
+    )
 
 # Main function to handle the page
 def main():
@@ -61,3 +79,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    

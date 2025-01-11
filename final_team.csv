@@ -1,2 +1,100 @@
 Player Name,Franchise,Points,Role
-
+K.L Rahul,Delhi Capitals,87,Wicketkeeper/Opener
+Rishabh Pant,Delhi Capitals,88,Wicketkeeper/Middle Order
+Avesh Khan,Delhi Capitals,83,Bowler/pace bowler
+Pat Cummins,Delhi Capitals,88,Bowler/pace bowler
+Ben Stokes,Delhi Capitals,87,All rounder/Finisher/Pace Bowler
+Vijay Shankar,Delhi Capitals,81,All rounder/middle order
+Jonny Bairstow,Delhi Capitals,84,Batter/Opener
+Anrich Nortje,Delhi Capitals,84,Bowler/pace bowler
+Nitish Kumar Reddy,Delhi Capitals,84,All rounder/middle order/pace bowler
+Khaleel Ahmed,Delhi Capitals,82,Bowler/pace bowler
+Ashwin,Delhi Capitals,85,Bowler/Spinner
+Shubman Gill,Mumbai Indians,87,Batter/Opener
+Suryakumar Yadav,Mumbai Indians,90,Batter/Middle Order
+Jasprit Bumrah,Mumbai Indians,92,Bowler/pace bowler
+Theekshana,Mumbai Indians,81,Bowler/Spinner
+Washington Sundar,Mumbai Indians,83,All rounder/spinner
+Kyle Mayers,Mumbai Indians,82,All rounder/Opener
+Cameron Green,Mumbai Indians,83,All rounder/middle order
+Rohit Sharma,Mumbai Indians,88,Batter/Opener
+Dhruv Jurel,Mumbai Indians,82,Wicketkeeper/Finisher
+Nandre Burger,Mumbai Indians,82,Bowler/pace bowler
+Kagiso Rabada,Mumbai Indians,85,Bowler/pace bowler
+Fraser mcgurk,Chennai Super Kings,82,Batter/Opener
+Rinku Singh,Chennai Super Kings,84,Batter/Finisher
+Ishan Kishan,Chennai Super Kings,83,Wicketkeeper/Opener
+Mohammed Shami,Chennai Super Kings,87,Bowler/pace bowler
+Sandeep Sharma,Chennai Super Kings,82,Bowler/pace bowler
+Rajat Patidar,Chennai Super Kings,82,Batter/Middle Order
+Travis Head,Chennai Super Kings,88,Batter/Opener
+Glen Maxwell,Chennai Super Kings,87,All rounder/middle order/spinner
+Ravindra Jadeja,Chennai Super Kings,87,All rounder/Finisher/Spinner
+Pathirana,Chennai Super Kings,86,Bowler/pace bowler
+Adam Zampa,Chennai Super Kings,82,Bowler/Spinner
+Abishek Sharma,Sunrisers Hyderabad,85,Batter/Opener
+Will jacks,Sunrisers Hyderabad,84,Batter/Opener
+MS Dhoni,Sunrisers Hyderabad,90,Wicketkeeper/Finisher
+Heinrich Klaasen,Sunrisers Hyderabad,89,Wicketkeeper/Middle Order
+Ravi Bishnoi,Sunrisers Hyderabad,82,Bowler/Spinner
+Kane Williamson,Sunrisers Hyderabad,82,Batter/Middle Order
+Bhuvneshwar Kumar,Sunrisers Hyderabad,87,Bowler/pace bowler
+Mukesh Kumar,Sunrisers Hyderabad,82,Bowler/pace bowler
+Mitchell Marsh,Sunrisers Hyderabad,84,All rounder/middle order/pace bowler
+Sam Curran,Sunrisers Hyderabad,85,All rounder/pace bowler/middle order
+Jaydev Unadkat,Sunrisers Hyderabad,80,Bowler/pace bowler
+David Warner,Rajasthan Royals,84,Batter/Opener
+Shreyas Iyer,Rajasthan Royals,85,Batter/Middle Order
+Shashank,Rajasthan Royals,81,Batter/Finisher
+Tristan Stubbs,Rajasthan Royals,84,Wicketkeeper/Finisher
+Hazelwood,Rajasthan Royals,86,Bowler/pace bowler
+Arshdeep Singh,Rajasthan Royals,85,Bowler/pace bowler
+Kuldeep Yadav,Rajasthan Royals,85,Bowler/Spinner
+Marcus Stoinis,Rajasthan Royals,84,All rounder/middle order
+Liam Livingstone,Rajasthan Royals,84,All rounder/middle order
+Venkatesh Iyer,Rajasthan Royals,84,All rounder/Opener
+Akash Deep,Rajasthan Royals,81,Bowler/pace bowler
+Ruturaj Gaikwad,Royal Challengers Bangalore,87,Batter/Opener
+Nicholas Pooran,Royal Challengers Bangalore,84,Batter/Middle Order
+Harshal Patel,Royal Challengers Bangalore,83,Bowler/pace bowler
+Coetzee,Royal Challengers Bangalore,83,Bowler/pace bowler
+Mohit Sharma,Royal Challengers Bangalore,82,Bowler/pace bowler
+Jofra Archer,Royal Challengers Bangalore,84,Bowler/pace bowler
+Rashid Khan,Royal Challengers Bangalore,90,All rounder/Spinner/Finisher
+Devan Conway,Royal Challengers Bangalore,85,Batter/Opener
+DK,Royal Challengers Bangalore,84,Wicketkeeper/Finisher
+Riyan Parag,Royal Challengers Bangalore,84,All rounder/middle order
+Tushar Deshpande,Royal Challengers Bangalore,81,Bowler/pace bowler
+Rachin Ravindra,Gujarat Titans,82,Batter/Opener
+Abishek Porel,Gujarat Titans,81,Batter/Middle Order
+Sai Sudharsan,Gujarat Titans,83,Batter/Middle Order
+Vaibhav Arora,Gujarat Titans,81,Bowler/pace bowler
+Piyush Chawla,Gujarat Titans,80,Bowler/Spinner
+Hardik Pandya,Gujarat Titans,91,All rounder/Finisher/Pace Bowler
+Sanju Samson,Gujarat Titans,88,Wicketkeeper/Opener
+Faf du Plessis,Gujarat Titans,88,Batter/Opener
+Deepak Chahar,Gujarat Titans,83,Bowler/pace bowler
+Varun Chakravarthy,Gujarat Titans,84,Bowler/Spinner
+Shivam Dube,Gujarat Titans,86,All rounder/finisher
+Virat Kohli,Punjab Kings,91,Batter/Opener
+Nitish Rana,Punjab Kings,81,Batter/Middle Order
+Salt,Punjab Kings,85,Wicketkeeper/Opener
+T Natarajan,Punjab Kings,84,Bowler/pace bowler
+Noor Ahmed,Punjab Kings,84,Bowler/Spinner
+Ramandeep Singh,Punjab Kings,82,All rounder/Finisher/Pace Bowler
+Rahul Tripathi,Punjab Kings,82,Batter/Opener
+Markaram,Punjab Kings,83,Batter/Middle Order
+Trent Boult,Punjab Kings,87,Bowler/pace bowler
+Yuzvendra Chahal,Punjab Kings,86,Bowler/Spinner
+Andre Russell,Punjab Kings,89,All rounder/Finisher/Pace Bowler
+Tilak Varma,Kolkata Knight Riders,84,Batter/Middle Order
+Mitchell Starc,Kolkata Knight Riders,88,Bowler/pace bowler
+Sunil Narine,Kolkata Knight Riders,88,All rounder/Opener/spinner
+Raguvanshi,Kolkata Knight Riders,80,Batter/Middle Order
+Jos Buttler,Kolkata Knight Riders,87,Wicketkeeper/Opener
+Quinton de Kock,Kolkata Knight Riders,86,Wicketkeeper/Opener
+David Miller,Kolkata Knight Riders,83,Batter/Finisher
+Mohammed Siraj,Kolkata Knight Riders,85,Bowler/pace bowler
+Urman Malik,Kolkata Knight Riders,81,Bowler/pace bowler
+Rahul Chahar,Kolkata Knight Riders,80,Bowler/Spinner
+Axar Patel,Kolkata Knight Riders,86,All rounder/spinner

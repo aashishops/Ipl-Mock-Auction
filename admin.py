@@ -11,7 +11,7 @@ def load_data():
 IPL_FRANCHISES = [
     'Mumbai Indians', 'Chennai Super Kings', 'Royal Challengers Bangalore', 'Delhi Capitals',
     'Kolkata Knight Riders', 'Sunrisers Hyderabad', 'Rajasthan Royals', 'Punjab Kings',
-    'Lucknow Super Giants', 'Gujarat Titans', 'Kochi Tuskers Kerala', 'Deccan Chargers'
+    'Lucknow Super Giants', 'Gujarat Titans', 'Unsold'
 ]
 
 def update_bid(player_name, team_name, bid_amount):
@@ -59,6 +59,8 @@ def admin_page():
         team_name = st.selectbox("Select Team", IPL_FRANCHISES)
         bid_amount = st.number_input(f"Enter Bid Amount for {player_name} ({team_name})", min_value=0, value=0)
 
+        st.text(f"Counter: {st.session_state.counter}")
+
         # Update bid button
         if st.button("Update Bid", key="update_bid_button"):
             if bid_amount > 0:
@@ -69,6 +71,7 @@ def admin_page():
                     st.session_state.players_bids_df[st.session_state.players_bids_df['Bid Amount'] > 0]['Player Name']
                 )]  # Update available players list
                 st.success("Data reloaded successfully.")
+                st.session_state.counter += 1
             else:
                 st.error("Bid amount must be greater than zero")
     else:
@@ -82,6 +85,9 @@ def main():
         auction_df, players_bids_df = load_data()
         st.session_state.auction_df = auction_df
         st.session_state.players_bids_df = players_bids_df
+
+    if 'counter' not in st.session_state:
+        st.session_state.counter = 0
 
     # Admin page content
     admin_page()
