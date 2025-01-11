@@ -52,6 +52,11 @@ def public_page():
         # Add a clickable link at the bottom left
     st.markdown(
         """
+        <div style="position: fixed; bottom: 50px; left: 10px;">
+            <a href="http://192.168.0.101:4201/" target="_blank" style="text-decoration: none; color: #007BFF;">
+                Go to Secret Ballot Page
+            </a>
+        </div>
         <div style="position: fixed; bottom: 10px; left: 10px;">
             <a href="http://192.168.0.101:4209/" target="_blank" style="text-decoration: none; color: #007BFF;">
                 Go to Team Submisson Page

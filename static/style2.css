@@ -1,0 +1,100 @@
+/* General Body Styles */
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e1e; /* Dark background */
+    color: #e5e5e5; /* Light text color */
+}
+
+/* Centered container */
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #2e2e2e; /* Slightly lighter background for contrast */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Header Styles */
+h1 {
+    color: #f39c12; /* Vibrant yellow for headers */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form Styles */
+form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label Styles */
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+/* Input, Select, and Button Styles */
+input, select, button {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+input, select {
+    background-color: #3a3a3a;
+    color: #ffffff;
+}
+
+input:focus, select:focus {
+    background-color: #4a4a4a;
+    box-shadow: 0 0 5px #3498db;
+}
+
+/* Button Styling */
+button {
+    background-color: #f39c12; /* Vibrant yellow button */
+    color: #1e1e1e; /* Dark text on button */
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #d87d00;
+}
+
+/* Highlight for Dropdown Options */
+select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23e5e5e5'%3E%3Cpath d='M7 10l5 5 5-5H7z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+}
+
+/* Add Spacing Between Form Fields */
+form > *:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    input, select, button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}

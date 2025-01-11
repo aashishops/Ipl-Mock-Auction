@@ -1,4 +1,6 @@
-﻿Player Name,Role,Points,
+﻿,,,
+,OPENING BATSMEN,,
+Player Name,Role,Points,
 Virat Kohli,Batter/Opener,91,
 Faf du Plessis,Batter/Opener,88,
 Rohit Sharma,Batter/Opener,88,
@@ -23,6 +25,10 @@ Chris Gayle,Batsman/Opener,90,
 Gautam Gambhir,Batsman/Opener,87,
 David Warner,Batter/Opener,90,
 Shikhar Dhawan,Batter/Opener,89,
+,,,
+,MIDDLE ORDER BATSMEN,,
+,,,
+Player Name,Role,Points,
 Suryakumar Yadav,Batter/Middle Order,90,
 Shreyas Iyer,Batter/Middle Order,85,
 Tilak Varma,Batter/Middle Order,84,
@@ -48,6 +54,9 @@ Kane Williamson,Batter/Middle Order,82,
 Suresh Raina,Batsman/Middle Order,91,
 Ambati Rayudu,Batsman/Middle Order,86,
 Shaun Marsh,Batsman/Middle Order,86,
+,FINISHERS,,
+,,,
+Player Name,Role,Points,
 Rinku Singh,Batter/Finisher,84,
 David Miller,Batter/Finisher,83,
 Tim David,Batter/Finisher,82,
@@ -56,6 +65,9 @@ Nehal Wadheera,Batter/Finisher,79,
 Ashutosh sharma,Batter/Finisher,80,
 Sarfaraz Khan,Batter/Finisher,78,
 Romario Sheperd,Batter/Finisher,80,
+,,,
+,Wicket Keeper,,
+Player Name,Role,Points,
 MS Dhoni,Wicketkeeper/Finisher,90,
 KS Bharat,Wicketkeeper/Finisher,78,
 Tristan Stubbs,Wicketkeeper/Finisher,84,
@@ -78,6 +90,10 @@ Wriddhiman Saha,Wicketkeeper/Opener,79,
 AB De Villiers,Wicket Keeper/Middle Order,89,
 Robin Uthappa,Wicket Keeper/Middle Order,87,
 Adam Gilchrist,Wicket Keeper/Opener,86,
+,,,
+,PACE BOWLER,,
+,,,
+Player Name,Role,Points,
 Jasprit Bumrah,Bowler/pace bowler,92,
 Mitchell Starc,Bowler/pace bowler,88,
 Pat Cummins,Bowler/pace bowler,88,
@@ -129,6 +145,9 @@ Richard Gleeson,Bowler/pace bowler,78,
 Lasith Malinga,Bowler/Pace Bowler,91,
 Dale Steyn,Bowler/Pace Bowler,87,
 Ashish Nehra,Bowler/Pace Bowler,86,
+,,,
+,SPINNER,,
+,,,
 Player Name,Role,Points,
 Yuzvendra Chahal,Bowler/Spinner,86,
 Kuldeep Yadav,Bowler/Spinner,85,
@@ -146,6 +165,11 @@ Rahul Chahar,Bowler/Spinner,80,
 Murugan Ashwin,Bowler/Spinner,77,
 Keshav Maharaj,Bowler/Spinner,79,
 Amit Mishra,Bowler/Spinner,87,
+,,,
+,ALL ROUNDER,,
+,,,
+Player Name,Role,Points,
+Column1,Column2,Column3,
 Rishi Dhawan,All rounder/finisher/Pace Bowler,76,
 Michael Bracewell,All rounder/ middle order/spinner,78,
 Axar Patel,All rounder/middle order/spinner,86,
@@ -188,5 +212,29 @@ Kieran Pollard,All rounder/Pace Bowler/Finisher,88,
 Shane Watson,All rounder/Pace Bowler/Middle Order,87,
 Yusuf Pathan,All Rounder/Spinner/Middle order,86,
 Yuvraj Singh,All rounder/Spinner/Middle order,86,
-
-
+,,,
+,LEGENDS ENTIRE LIST IS BELOW,,
+Legend,Role,Points,
+Suresh Raina,Batsman/Middle Order,91,
+Chris Gayle,Batsman/Opener,90,
+Lasith Malinga,Bowler/Pace Bowler,91,Teams Played For
+Dwayne Bravo,All rounder/Pace Bowler/Finisher,89,CSK
+AB De Villiers,Wicket Keeper/Middle Order,89,RCB/KKR/PKBS
+Kieran Pollard,All rounder/Pace Bowler/Finisher,88,MI
+Shane Watson,All rounder/Pace Bowler/Middle Order,87,CSK/MI
+Robin Uthappa,Wicket Keeper/Middle Order,87,DC/RCB
+Amit Mishra,Bowler/Spinner,87,MI
+Yusuf Pathan,All Rounder/Spinner/Finisher,86,RR/RCB/CSK
+Dale Steyn,Bowler/Pace Bowler,87,KKR/RR/CSK/MI/RCB
+Yuvraj Singh,All rounder/Spinner/Middle order,86,DC/SRH
+Gautam Gambhir,Batsman/Opener,87,RR/KKR/SRH
+Ambati Rayudu,Batsman/Middle Order,86,RCB/SRH
+Ashish Nehra,Bowler/Pace Bowler,86,PBKS/RCB/DC/SRH/MI
+Sachin Tendulkar,Batsman/Opener,87,DC/KKR
+Shaun Marsh,Batsman/Middle Order,86,MI/CSK
+Adam Gilchrist,Wicket Keeper/Opener,86,MI/DC/CSK/SRH
+David Warner,Batter/Opener,90,MI
+Shikhar Dhawan,Batter/Opener,89,PBKS
+,,,PBKS
+,,,SRH/DC
+,,,PBKS/DC/SRH/MI

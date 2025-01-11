@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="/static/style2.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Admin Dashboard</h1>
+        <form action="/update_bid" method="post">
+            <label for="player">Select Player:</label>
+            <select name="player_name" id="player" required>
+                {% for player in players %}
+                <option value="{{ player['Player Name'] }}">{{ player['Player Name'] }}</option>
+                {% endfor %}
+            </select>
+
+            <label for="team">Select Team:</label>
+            <select name="team_name" id="team" required>
+                {% for team in teams %}
+                <option value="{{ team }}">{{ team }}</option>
+                {% endfor %}
+            </select>
+
+            <label for="bid">Bid Amount (₹Lakh):</label>
+            <input type="number" id="bid" name="bid_amount" min="1" required>
+
+            <button type="submit">Update Bid</button>
+        </form>
+    </div>
+</body>
+</html>
