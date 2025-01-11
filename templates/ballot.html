@@ -9,57 +9,121 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
+            background-color: black;
+            color: #e0e0e0;
         }
         .container {
             width: 80%;
-            margin: 20px auto;
-            padding: 20px;
-            background: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 50px auto;
+            padding: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+            border-radius: 8px;
+            background-color: #222; /* Dark background for container */
         }
         h1 {
             text-align: center;
-            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #fff;
         }
         form {
             display: flex;
             flex-direction: column;
-            gap: 15px;
+            gap: 20px;
             max-width: 500px;
             margin: 0 auto;
         }
         label {
             font-weight: bold;
-            margin-bottom: 5px;
+            color: #fff;
         }
         input, select, button {
-            padding: 10px;
+            padding: 12px;
             font-size: 16px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
+            border: 1px solid #444;
+            border-radius: 6px;
+            background-color: #333; /* Dark background for text fields */
+            color: #fff; /* White text for input fields */
         }
         button {
-            background-color: #007BFF;
-            color: white;
+            background-color: grey; 
+            color: #9795A5; 
             cursor: pointer;
             border: none;
+            transition: background-color 0.3s ease;
         }
         button:hover {
-            background-color: #0056b3;
+            background-color: #444;
         }
         .error {
-            color: red;
+            color: #f44336;
             text-align: center;
+            font-weight: bold;
         }
         .success {
-            color: green;
+            color: #8bc34a;
             text-align: center;
+            font-weight: bold;
+        }
+        select, input[type="number"] {
+            background-color: #333; /* Dark background for select and number fields */
+        }
+
+        /* Team-Specific Lighter Text Colors for Form and Button */
+        .mumbai input, .mumbai select {
+            color: #6f9bb5; /* Lighter blue for Mumbai Indians */
+        }
+        .csk input, .csk select {
+            color: #f9d545; /* Lighter yellow for Chennai Super Kings */
+        }
+        .srh input, .srh select {
+            color: #ff8c4f; /* Lighter orange for Sunrisers Hyderabad */
+        }
+        .rajasthan input, .rajasthan select {
+            color: #f06292; /* Lighter pink for Rajasthan Royals */
+        }
+        .dc input, .dc select {
+            color: #8a9a9e; /* Lighter grey for Delhi Capitals */
+        }
+        .punjab input, .punjab select {
+            color: #f06292; /* Lighter pink for Punjab Kings */
+        }
+        .rcb input, .rcb select {
+            color: #e57373; /* Lighter red for Royal Challengers Bangalore */
+        }
+        .kkr input, .kkr select {
+            color: #7e57c2; /* Lighter purple for Kolkata Knight Riders */
+        }
+
+        /* Team-Specific Button Text Colors */
+        .mumbai button {
+            color: #6f9bb5; /* Lighter blue for Mumbai Indians */
+        }
+        .csk button {
+            color: #f9d545; /* Lighter yellow for Chennai Super Kings */
+        }
+        .srh button {
+            color: #ff8c4f; /* Lighter orange for Sunrisers Hyderabad */
+        }
+        .rajasthan button {
+            color: #f06292; /* Lighter pink for Rajasthan Royals */
+        }
+        .dc button {
+            color: #8a9a9e; /* Lighter grey for Delhi Capitals */
+        }
+        .punjab button {
+            color: #f06292; /* Lighter pink for Punjab Kings */
+        }
+        .rcb button {
+            color: #e57373; /* Lighter red for Royal Challengers Bangalore */
+        }
+        .kkr button {
+            color: #7e57c2; /* Lighter purple for Kolkata Knight Riders */
         }
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="container {% if team_name == 'Mumbai Indians' %}mumbai{% elif team_name == 'Chennai Super Kings' %}csk{% elif team_name == 'Sunrisers Hyderabad' %}srh{% elif team_name == 'Rajasthan Royals' %}rajasthan{% elif team_name == 'Delhi Capitals' %}dc{% elif team_name == 'Punjab Kings' %}punjab{% elif team_name == 'Royal Challengers Bangalore' %}rcb{% elif team_name == 'Kolkata Knight Riders' %}kkr{% endif %}">
         <h1>IPL Auction System</h1>
 
         {% if error %}

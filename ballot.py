@@ -12,14 +12,14 @@ app.mount("/static", StaticFiles(directory=static_dir), name="static")
 
 # Dictionary with IPL team usernames and passwords
 team_credentials = {
-    "Mumbai Indians": "mi@2024",
-    "Chennai Super Kings": "csk@2024",
-    "Delhi Capitals": "dc@2024",
-    "Kolkata Knight Riders": "kkr@2024",
-    "Royal Challengers Bangalore": "rcb@2024",
-    "Rajasthan Royals": "rr@2024",
-    "Sunrisers Hyderabad": "srh@2024",
-    "Punjab Kings": "pbks@2024",
+    "Mumbai Indians": "onefamily",
+    "Chennai Super Kings": "zenmode",
+    "Delhi Capitals": "massage7",
+    "Kolkata Knight Riders": "kkhaar",
+    "Royal Challengers Bangalore": "eesala",
+    "Rajasthan Royals": "banbros",
+    "Sunrisers Hyderabad": "hrs",
+    "Punjab Kings": "prathamlovesthushar",
     "Lucknow Super Giants": "lsg@2024",
     "Gujarat Titans": "gt@2024"
 }
