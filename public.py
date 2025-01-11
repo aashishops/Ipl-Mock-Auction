@@ -67,7 +67,8 @@ def public_page():
     )
     st.download_button(
         label= "Download Players List",
-        data =open(r"E:\folder\mock aution\code\mock_auction_players.csv").read(),
+        data = open(r"C:\Users\thush\OneDrive\Desktop\MOCK AUCTION 2024 DEC\Ipl-Mock-Auction\mock_auction_players.csv")
+.read(),
         file_name = "mock_auction_player.csv",
         mime = "text/csv",
     )
